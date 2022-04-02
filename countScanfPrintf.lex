@@ -16,7 +16,7 @@ int yywrap()
 int main()
 {
     yyin=fopen("open.c","r");
-    yyout=fopen("new.c","r");
+    yyout=fopen("new.c","w");
     yylex();
     printf("\nNumber of scanfs= %d\n", sf);
     printf("\nNumber of printfs= %d\n", pf);
